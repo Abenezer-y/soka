@@ -14,3 +14,4 @@ streamlit_folium
 supervision
 ultralytics
 roboflow
+opencv-python
