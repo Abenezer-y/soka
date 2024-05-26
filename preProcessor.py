@@ -1,5 +1,5 @@
 import streamlit as st
-import cv2
+# import cv2
 import numpy as np
 import pandas as pd
 import tempfile
@@ -50,7 +50,7 @@ def preprocessor(project_folder):
                         par_dir = '/Users/abenezer/Documents/Projects/SOKA/video_analyzer/working_frames/'
                         folder_path = os.path.join(par_dir, folder_path)
                         file_path = os.path.join(folder_path, file_name)
-                        cv2.imwrite(file_path, frame)
+                        # cv2.imwrite(file_path, frame)
                         st.success(f"Image saved to: {file_path}")
             
         extracted_frame = st.empty()
