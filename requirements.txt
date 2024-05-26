@@ -38,9 +38,7 @@ jupyter_core==5.5.0
 matplotlib==3.8.2
 matplotlib-inline==0.1.6
 
-openai==1.13.3
-opencv-python
-opencv-python-headless==4.9.0.80
+opencv-python-headless
 openpyxl==3.1.2
 pandas==2.1.4
 parso==0.8.3
@@ -53,7 +51,7 @@ plotly==5.22.0
 pluggy==1.4.0
 prettytable==3.10.0
 proglog==0.1.10
-
+pillow
 psycopg2-binary==2.9.9
 PyYAML==6.0.1
 
