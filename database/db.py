@@ -1,13 +1,25 @@
 from typing import Optional, List, Dict, Union
 # One line of FastAPI imports here later 👈
-from sqlmodel import Field, Session, SQLModel, create_engine, select, Relationship, DateTime
+from sqlmodel import Field, Session, SQLModel, select, Relationship, DateTime
 import pandas as pd
 import numpy as np
 import streamlit as st
+from sqlalchemy import URL, create_engine
 
-sqlite_file_name = "./database/soka_db_00.db"
-sqlite_url = f"sqlite:///{sqlite_file_name}"
-engine = create_engine(sqlite_url, echo=True,)
+connection_string = URL.create(
+    'postgresql',
+    username='koyeb-adm',
+    password='wUM7bi2tgEAL',
+    host='ep-rough-salad-a2mb40nt.eu-central-1.pg.koyeb.app',
+    database='soka',
+)
+sqlite_url = "postgres://koyeb-adm:wUM7bi2tgEAL@ep-rough-salad-a2mb40nt.eu-central-1.pg.koyeb.app/icog"
+# engine = create_engine(connection_string)
+engine = create_engine(connection_string, echo=True)
+
+# sqlite_file_name = "./database/soka_db_00.db"
+# sqlite_url = f"sqlite:///{sqlite_file_name}"
+# engine = create_engine(sqlite_url, echo=True,)
 
 
 def create_db_and_tables():
