@@ -12,9 +12,9 @@ from resources.widegts import return_frame, video_uploader
 from resources.app_functions import predict_team, create_colors_info, crop_detections, get_pixel_color, grid_image
 import supervision as sv
 
-map_ver_path = '/Users/abenezer/Documents/Projects/SOKA/video_analyzer/working_frames/pitch_map/map_ver.png'
-map_ver_points_path = '/Users/abenezer/Documents/Projects/SOKA/video_analyzer/working_frames/pitch_map/map_ver_with_points.png'
-df = pd.read_excel('/Users/abenezer/Documents/Projects/SOKA/video_analyzer/functions/corners_green.xlsx')
+map_ver_path = '/working_frames/pitch_map/map_ver.png'
+map_ver_points_path = 'pitch_map/map_ver_with_points.png'
+df = pd.read_excel('functions/corners_green.xlsx')
 model_path = '/Users/abenezer/Downloads/best (16).pt'
 
 ellipse_annotator = sv.EllipseAnnotator()

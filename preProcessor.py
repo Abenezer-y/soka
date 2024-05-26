@@ -15,7 +15,7 @@ from functions.calibration import calibrate, undistort_frame
 from resources.game_report import event_report
 from resources.calibrate import show_image_album
 from resources.remove_distortion import remove_distortion
-from resources.tactical_map import tactical_map
+# from resources.tactical_map import tactical_map
 # from resources.player_locations import detection
 from resources.match_info import match_info
 from resources.widegts import video_uploader, return_frame
@@ -74,8 +74,8 @@ def analyzer(project_folder, match_df):
         event_page(input_vide_file.name, tempf.name, input_vide_file, tempf, video_meta_0, project_folder)
     with tab6:
         player_detection()
-    with tab7:
-        tactical_map(input_vide_file, tempf, video_meta_0)
+    # with tab7:
+        # tactical_map(input_vide_file, tempf, video_meta_0)
     with tab8:
         event_report()
             

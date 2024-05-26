@@ -12,8 +12,8 @@ import os
 import pandas as pd
 
 event_type = ['Goal', 'Yellow Card', 'Red Card', 'Substitute', 'Foul', 'Shots', 'Set Pieces', 'Pass', 'Defensive Action', 'Aerial', 'Attacking Actions']
-HOME_PATH = '/Users/abenezer/Documents/Projects/SOKA/video_analyzer/moments/'
-model_path = '/Users/abenezer/Downloads/best (16).pt'
+HOME_PATH = '/moments/'
+model_path = ''
 
 def add_players_info(df, player_options):
 
