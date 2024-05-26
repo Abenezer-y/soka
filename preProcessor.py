@@ -93,7 +93,7 @@ if demo_selected == 'Preprocess':
         preprocessor(project_folder)
     
 elif demo_selected == 'Analyze':
-    calibration_data = np.load('functions/sony_4k_calibration_data.npz')
+    # calibration_data = np.load('functions/sony_4k_calibration_data.npz')
     input_vide_file, tempf, video_meta_0, df = video_uploader('new_uu')
     
     if input_vide_file:
