@@ -16,3 +16,4 @@ ultralytics
 roboflow
 opencv-contrib-python-headless
 streamlit_webrtc
+inference
